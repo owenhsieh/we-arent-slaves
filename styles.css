@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+::selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+.wans-header {
+    overflow: visible;
+    background-color: white;
+}
+
+.wans-header .material-icons {
+    color: #767777 !important;
+}
+
+.wans-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.wans-drawer {
+    border-right: none;
+}
+
+.wans-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.wans-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+}
+
+.wans-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #00ACC1;
+}
+
+.wans-drawer .mdl-layout-title {
+    position: relative;
+    background: #4DD0E1;
+    height: 60px;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 500;
+}
+
+.wans-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.wans-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+.wans-map {
+    height: 550px;
+    box-shadow: 0 4px 8px 0
+}
+
+.wans-img {
+    box-shadow: 0 4px 8px 0
+}
+
+.wans-table-wrapper {
+    max-height: 550px;
+    overflow:auto;
+    box-shadow: 0 4px 8px 0
+}
+
+.wans-table{
+    width:100%
+}
+
+.wans-table > td {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.wans-table-cell--name{
+    width:40%
+}
+
+.wans-table-cell--rep{
+    width:15%
+}
+
+.wans-table-cell--law{
+    width:35%
+}
+
+.wans-table-cell--time{
+    width:10%
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+    .wans-title {
+        display: none !important;
+    }
+
+    .wans-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 24px;
+    }
+
+    .wans-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+
+    .wans-map {
+        height: 400px
+    }
+}

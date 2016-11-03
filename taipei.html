@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="We Aren't Slaves - Taiwan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>We Aren't Slaves - Taiwan</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./clusterize.css">
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class="wans-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="wans-title mdl-layout-title mdl-navigation__link mdl-typography--text-uppercase">
+                    We Aren't Slaves - Taiwan
+                </span>
+            </div>
+        </div>
+
+        <div class="wans-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title">
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="./index.html">Home</a>
+                <span class="mdl-navigation__link">Locations</span>
+                <a class="mdl-navigation__link">Taipei City</a>
+            </nav>
+        </div>
+
+        <div class="wans-content mdl-layout__content">
+            <div class="mdl-typography--text-center">
+                <div class="logo-font wans-slogan">taipei city</div>
+                <div class="logo-font wans-sub-slogan">we do labor, but we aren't yours</div>
+            </div>
+
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--2-offset-desktop wans-map" id="wans-map"></div>
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--2-offset-desktop wans-table-wrapper" id='scrollArea'>
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp wans-table" id="wans-data-table">
+                        <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric wans-table-cell--name">名稱</th>
+                                <th class="mdl-data-table__cell--non-numeric wans-table-cell--rep">代表</th>
+                                <th class="mdl-data-table__cell--non-numeric wans-table-cell--law">違反條款</th>
+                                <th class="mdl-data-table__cell--non-numeric wans-table-cell--time">違反合計</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contentArea" class="clusterize-content">
+                            <tr class="clusterize-no-data">
+                                <td>Loading data…</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="script.js"></script>
+    <script src="clusterize.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXnhsN8NB5wgbuScDwK1HYY7Z3WUOioo8&libraries=places&callback=callback"></script>
+</body>
+</html>
