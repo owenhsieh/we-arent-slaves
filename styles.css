@@ -93,7 +93,7 @@ a img{
     width:100%
 }
 
-.wans-table > td {
+td {
     word-wrap: break-word;
     white-space: normal;
 }
@@ -135,5 +135,21 @@ a img{
 
     .wans-map {
         height: 400px
+    }
+
+    .wans-table-cell--name{
+        max-width:60%;
+    }
+
+    .wans-table-cell--rep{
+        max-width:25%;
+    }
+
+    .wans-table-cell--law{
+        display: none;
+    }
+
+    .wans-table-cell--time{
+        max-width:15%;
     }
 }
